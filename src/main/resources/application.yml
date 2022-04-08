@@ -4,3 +4,14 @@ eureka:
   client:
     register-with-eureka: false
     fetch-registry: false
+    
+    
+management:
+  endpoints:
+    web:
+      exposure:
+        include:
+        - true
+  endpoint:
+    health:
+      show-details: always
